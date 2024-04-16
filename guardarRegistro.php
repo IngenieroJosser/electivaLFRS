@@ -27,7 +27,7 @@
 
 
     // Consulta preparada para insertar el nuevo registro en la base de datos
-    $consulta = $conexion->query("INSERT INTO registro (nombreCompleto, correo, usuario, contrasena) VALUES ($nombreCompleto, $correo, $usuario, $contrasena_encriptada)");
+    $consulta = $conexion->query("INSERT INTO `registro` (nombreCompleto, correo, usuario, contrasena) VALUES ($nombreCompleto, $correo, $usuario, $contrasena_encriptada)");
 
     // Ejecutar la consulta
     if ($consulta) {

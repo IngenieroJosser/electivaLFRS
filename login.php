@@ -37,8 +37,8 @@
                     <!--Login-->
                     <form action="procesarRegistro.php" method="post" class="formulario__login">
                         <h2>Login My Farmacia</h2>
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="text" name="correo" placeholder="Correo Electronico">
+                        <input type="password" name="contrasena" placeholder="Contraseña">
                         <button>Entrar</button>
                     </form>
 
@@ -46,9 +46,9 @@
                     <form action="./guardarRegistro.php" method="post" class="formulario__register">
                         <h2>Regístro</h2>
                         <input type="text" name="nombreCompleto" placeholder="Nombre Completo">
-                    <input type="email" name="correo" placeholder="Correo Electrónico">
+                    <input type="email" name="correo" require placeholder="Correo Electrónico">
                     <input type="text" name="usuario" placeholder="Nombre de Usuario">
-                        <input type="password" name="contrasena" placeholder="Contraseña">
+                        <input type="password" name="contrasena" require placeholder="Contraseña">
                         <button>Regístrarse</button>
                     </form>
                 </div>
