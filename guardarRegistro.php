@@ -10,6 +10,10 @@
     // Otros datos del formulario como correo electrónico, nombre, apellidos, etc.
 
     // Crear una variable para almacenar la conexion
+    $host = 'localhost'; // Nombre del servidor de la base de datos
+    $usuario = 'root'; // Usuario de la base de datos
+    $contrasena = ''; // Contraseña del usuario de la base de datos
+    $base_datos = 'farmacia'; // Nombre de la base de datos a la que te conectas
     $conexion = new mysqli($host, $usuario, $contrasena, $base_datos);
 
     // Verificar que los campos no estén vacíos
@@ -23,11 +27,10 @@
 
 
     // Consulta preparada para insertar el nuevo registro en la base de datos
-    $consulta = $conexion->prepare("INSERT INTO registro (nombreCompleto, correo, usuario, contrasena) VALUES (?, ?, ?, ?)");
-    $consulta->bind_param("ssss", $nombreCompleto, $correo, $usuario, $contrasena_encriptada);
+    $consulta = $conexion->query("INSERT INTO registro (nombreCompleto, correo, usuario, contrasena) VALUES ($nombreCompleto, $correo, $usuario, $contrasena_encriptada)");
 
     // Ejecutar la consulta
-    if ($consulta->execute()) {
+    if ($consulta) {
         echo "Registro exitoso. ¡Bienvenido, $usuario!";
     } else {
         echo "Error al registrar el usuario: " . $conexion->error;
