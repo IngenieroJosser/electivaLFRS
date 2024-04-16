@@ -2,7 +2,7 @@
 // Datos de conexión a la base de datos
 $host = 'localhost'; // Nombre del servidor de la base de datos
 $usuario = 'root'; // Usuario de la base de datos
-$contrasena = 'DevJosser@1234567'; // Contraseña del usuario de la base de datos
+$contrasena = ''; // Contraseña del usuario de la base de datos
 $base_datos = 'farmacia'; // Nombre de la base de datos a la que te conectas
 
 // Crear la conexión
