@@ -17,10 +17,10 @@
     $conexion = new mysqli($host, $usuario, $contrasena, $base_datos);
 
     // Verificar que los campos no estén vacíos
-    if (empty($nombreCompleto) || empty($correo) || empty($usuario) || empty($contrasena)) {
-        echo "Por favor completa todos los campos del formulario.";
-        exit; // Detener la ejecución si faltan datos
-    }
+    // if (empty($nombreCompleto) || empty($correo) || empty($usuario) || empty($contrasena)) {
+    //     echo "Por favor completa todos los campos del formulario.";
+    //     exit; // Detener la ejecución si faltan datos
+    // }
 
     // Encriptar la contraseña
     $contrasena_encriptada = password_hash($contrasena, PASSWORD_DEFAULT);
@@ -37,6 +37,6 @@
     }
 
     // Cerrar la conexión y liberar recursos
-    $consulta->close();
-    $conexion->close();
+    // $consulta->close();
+    // $conexion->close();
 ?>

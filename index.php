@@ -343,10 +343,10 @@
     <footer id="footer">
       <div class="container">
         <div class="row text-center">
-          <p>&copy; All Rights Reserved by Luis Felipe</p>
+          <p>&copy; Todos los derechos reservado para Luis Felipe</p>
           <div class="credits">
         
-            Designed by <a href="">LUISFE S.A.S</a>
+            Desarrollado por <a href="">LUISFE S.A.S</a>
           </div>
         </div>
       </div>
